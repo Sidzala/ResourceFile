@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ResourceFile.MyPage">
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+         <Label x:Name="Hello" Text="Hello World!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+             <Picker x:Name="picker">
+                   <Picker.Items>
+                        <x:String>English</x:String>
+                        <x:String>Spanish</x:String>
+                        <x:String>French</x:String>
+                      </Picker.Items>
+                </Picker>
+        <Button x:Name="ChangeLanguage1" Text="Click Here" BackgroundColor="White" Padding="24" Clicked="ChangeLanguage1_Clicked"/>
+        
+    </StackLayout>
+</ContentPage>
+
