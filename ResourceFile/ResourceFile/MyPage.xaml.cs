@@ -20,7 +20,7 @@ namespace ResourceFile
                 var language = CultureInfo.GetCultures(CultureTypes.NeutralCultures).ToList().First(element => element.EnglishName.Contains(picker.SelectedItem.ToString())); ;
                 Thread.CurrentThread.CurrentUICulture = language;
                 AppResources.Culture = language;
-                new NavigationPage(new MainPage());
+                var MainPage = new NavigationPage(new MainPage());
             }
         }
     }
